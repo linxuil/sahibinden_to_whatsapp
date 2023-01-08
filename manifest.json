@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Sahibeden sending messages to whatsapp",
+  "version": "1.0",
+  "description": "Adds the ability to send messages on the sahibeden website to WhatsApp without having to create a contact on your phone",
+    "icons": {
+    "32": "images/sahibinden_icon_032.png",
+    "48": "images/sahibinden_icon_048.png",
+    "64": "images/sahibinden_icon_064.png",
+    "72": "images/sahibinden_icon_072.png",
+    "96": "images/sahibinden_icon_096.png",
+    "128": "images/sahibinden_icon_128.png",
+    "256": "images/sahibinden_icon_256.png",
+    "512": "images/sahibinden_icon_512.png"
+  },
+    "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://www.sahibinden.com/ilan/*"
+      ]
+    }
+  ]
+}
